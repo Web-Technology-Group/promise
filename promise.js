@@ -12,7 +12,7 @@
   // set a value as non-configurable and non-enumerable
   function defineInternal ( obj, key, val ) {
     Object.defineProperty(obj, key, {
-      configurable: false,
+      configurable: true,
       enumerable: false,
       writable: true,
       value: val
